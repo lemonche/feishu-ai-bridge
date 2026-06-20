@@ -16,7 +16,7 @@ SETTINGS_FILE = BASE_DIR / "settings.yaml"
 def _load_settings():
     defaults = {
         "feishu": {
-            "lark_cli": "/usr/local/Cellar/node/25.9.0_1/lib/node_modules/@larksuite/cli/bin/lark-cli",
+            "lark_cli": "/path/to/lark-cli",
             "my_open_id": "ou_your_open_id_here",
             "chat_id": "oc_your_chat_id_here",
         },
