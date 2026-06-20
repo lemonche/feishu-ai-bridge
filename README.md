@@ -1,6 +1,6 @@
-# Feishu AI Bridge 🚀
+# Feishu AI Anydoor 🚀
 
-> 飞书消息驱动多 AI CLI 后端的桥接服务 —— 统一调度各家大模型 CLI，按需切换，结果回传飞书。
+> 飞书消息驱动多 AI CLI 的任意门 —— 统一调度各家大模型 CLI，按需切换，结果回传飞书。
 
 一个把飞书群聊作为统一入口、聚合调度多家 AI CLI 后端的服务。在飞书发一条消息，服务捕获后路由到指定的 AI CLI（Trae / Qwen / DeepSeek / 豆包 / Kimi 等）执行，结果以飞书富文本回传。
 
@@ -121,11 +121,11 @@ system_prompt: |
 ## 📁 项目结构
 
 ```
-feishu-ai-bridge/
+feishu-ai-anydoor/
 ├── main.py                      # 入口：PID锁、信号处理、主事件循环
 ├── restart_service.py           # 服务重启脚本（清理旧进程）
 ├── settings.yaml                # 主配置（飞书、后端、桥接参数）
-├── com.feishu-trae-bridge.plist # macOS launchd 自启动配置
+├── com.feishu-ai-anydoor.plist  # macOS launchd 自启动配置
 ├── profiles/                    # AI 模型配置档案
 │   ├── default.yaml
 │   ├── deepseek.yaml
@@ -173,7 +173,6 @@ feishu-ai-bridge/
 ```
 
 ---
-
 ## 🚀 快速开始
 
 ### 📋 环境依赖
@@ -225,8 +224,8 @@ active_profile: default
 python3 main.py
 
 # macOS 开机自启
-cp com.feishu-trae-bridge.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.feishu-trae-bridge.plist
+cp com.feishu-ai-anydoor.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.feishu-ai-anydoor.plist
 ```
 
 启动后飞书群会收到上线通知，即可开始使用。
