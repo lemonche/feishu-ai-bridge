@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Feishu-Trae Bridge v7
-飞书消息 → 多Session路由 → 异步队列执行 → 纯文本对话回传飞书
+Feishu AI Anydoor
+飞书消息 → 多Session路由 → 异步队列执行 → 富文本对话回传飞书
 
 启动: python3 main.py
-守护: launchctl load com.feishu-trae-bridge.plist
+守护: launchctl load com.feishu-ai-anydoor.plist
 """
 
 import atexit
