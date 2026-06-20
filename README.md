@@ -247,6 +247,3 @@ launchctl load ~/Library/LaunchAgents/com.feishu-trae-bridge.plist
 
 ---
 
-## License
-
-MIT
