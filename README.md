@@ -1,9 +1,5 @@
 # Feishu AI Anydoor 🚀
 
-<div align="center">
-  <img src="docs/images/cover.png" alt="Feishu AI Anydoor" width="600">
-</div>
-
 > 飞书消息驱动多 AI CLI 的任意门 —— 统一调度各家大模型 CLI，按需切换，结果回传飞书。
 
 一个把飞书群聊作为统一入口、聚合调度多家 AI CLI 后端的服务。在飞书发一条消息，服务捕获后路由到指定的 AI CLI（Trae / Qwen / DeepSeek / 豆包 / Kimi 等）执行，结果以飞书富文本回传。
